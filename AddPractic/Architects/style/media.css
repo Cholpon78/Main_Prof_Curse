@@ -1,0 +1,30 @@
+<<<<<<< HEAD
+@media screen and (max-width: 650px) {
+
+.name h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+}
+@media screen and (max-width: 600px) {
+    .second-logo{
+        display: none;
+    } 
+ 
+=======
+@media screen and (max-width: 650px) {
+
+.name h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+}
+@media screen and (max-width: 600px) {
+    .second-logo{
+        display: none;
+    } 
+ 
+>>>>>>> 53a35eee47babea7724b1c14a835ba00fa0ec04d
+    }

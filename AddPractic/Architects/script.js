@@ -9,7 +9,7 @@ const nameOfHouses = [
   "Renovated",
   "Barn House",
 ];
-const imgOfhausees = [
+const imgOfHauses = [
   "./assets/img/house2.jpg",
   "./assets/img/house3.jpg",
   "./assets/img/house4.jpg",
@@ -24,10 +24,10 @@ const parentHouse = document.querySelector(".house");
 
 let houses = "";
 
-for (let i = 0; i < imgOfhausees.length; i++) {
+for (let i = 0; i < imgOfHauses.length; i++) {
   parentHouse.innerHTML += ` 
 <div class="house">
-                <img src="${imgOfhausees[i]}" alt=""></img>
+                <img src="${imgOfHauses[i]}" alt="">
                 <h3 class="nameOfHouse">${nameOfHouses[i]}</h3>
             </div>`;
 }

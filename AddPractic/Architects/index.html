@@ -1,54 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/media.css" />
-  </head>
-  <body>
-    <header>
-      <div class="tops">
-        <div class="top">
-          <div>
-            <a href="" class="logo"><b>BR</b> Architects</a>
-          </div>
-          <div class="nav">
-            <a href="">Projects</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div class="main-imgs">
-        <img class="main-img" src="./assets/img/architect.jpg" alt="" />
-        <div class="name">
-          <h1>
-            <span class="first-logo"><b>BR</b></span>
-            <span class="second-logo">Architects</span>
-          </h1>
-        </div>
-      </div>
-    </header>
-    <main>
-        <section class="projects">
-         
-            <h2>Projects</h2>
-            <div class="project">
-           <!-- Этот див буду размножать с помощью JS   -->
-        
-            <div class="house">
-               <!-- <img src="house" alt="">
-                     <h3>NameOfHouse</h3> -->
-                          
-          </div>
-        </div>
-        </section>
-    </main>
-    <footer></footer>
 
-    <script src="./script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/media.css" />
+</head>
+
+<body>
+  <header>
+    <div class="tops">
+      <div class="top">
+        <div>
+          <a href="" class="logo"><b>BR</b> Architects</a>
+        </div>
+        <div class="nav">
+          <a href="">Projects</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-imgs">
+      <img class="main-img" src="./assets/img/architect.jpg" alt="" />
+      <div class="name">
+        <h1>
+          <span class="first-logo"><b>BR</b></span>
+          <span class="second-logo">Architects</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <!-- Этот див буду размножать с помощью JS    -->
+
+        <!-- <div class="house">
+                <img src="house" alt=""/>
+                     <h3>NameOfHouse</h3> 
+                </div>  -->
+      </div>
+    </section>
+
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+      <div class="cards">
+        <!-- <div class="card">
+                <img src="" alt="">
+                <h4>name</h4>
+                <h5>position</h5>
+                <p>text</p>
+                <button></button>
+                </div> -->
+      </div>
+      </p>
+    </section>
+
+<section class="contact">
+  <div class="forms">
+    <h2>Contact</h2>
+    <input type="text" placeholder="Name" title="Use only English letters"> 
+    <div class="email"><input  type="email" placeholder="Email"></div>
+    <input type="text" placeholder="Subject">
+    <input type="text" placeholder="Comment" maxlength="100">
+    <button class="btn">SENT MESSAGE</button>
+  </div>
+
+  <div class="rulesOfName">
+    <button>Use only letters</button>
+  </div>
+
+<div class="emailTool">Input correct email adresse</div>
+
+</section>
+  </main>
+  <footer></footer>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>

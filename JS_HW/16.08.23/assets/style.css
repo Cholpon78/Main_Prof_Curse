@@ -27,7 +27,6 @@ header {
   line-height: 112.29%; /* 15.721px */
   border: #000;
 }
-
 .nav a:hover {
   border: #000;
 }
@@ -49,9 +48,9 @@ header {
   padding: 30px;
   gap: 100px;
 }
-.infos img {
+/* .infos img {
   width: 40%;
-}
+} */
 .info h1 {
   color: #22356f;
   font-family: ABeeZee;

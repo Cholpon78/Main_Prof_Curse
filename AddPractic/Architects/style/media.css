@@ -1,30 +1,41 @@
-<<<<<<< HEAD
 @media screen and (max-width: 650px) {
-
-.name h1{
+  .name h1 {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
+  }
 }
 @media screen and (max-width: 600px) {
-    .second-logo{
-        display: none;
-    } 
- 
-=======
-@media screen and (max-width: 650px) {
+  .second-logo {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .project {
+    grid-template-columns: repeat(
+      2,
+      minmax(200px, 1fr)
+    ); /* Уменьшение до 2 элементов в строке */
+  }
+  .cards {
+    grid-template-columns: repeat(
+      2,
+      minmax(200px, 1fr)
+    ); /* Уменьшение до 2 элементов в строке */
+  }
+}
 
-.name h1{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 600px) {
+  .project {
+    grid-template-columns: repeat(
+      1,
+      minmax(200px, 1fr)
+    ); /* Уменьшение до 1 элемента в строке */
+  }
+  .cards {
+    grid-template-columns: repeat(
+      1,
+      minmax(200px, 1fr)
+    ); /* Уменьшение до 1 элемента в строке */
+  }
 }
-}
-@media screen and (max-width: 600px) {
-    .second-logo{
-        display: none;
-    } 
- 
->>>>>>> 53a35eee47babea7724b1c14a835ba00fa0ec04d
-    }

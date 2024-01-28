@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import NotFoundPage from './pages/NotFoundPage';
 import CategoriesPage from './pages/CategoriesPage';
+import HomePage from './pages/HomePage';
+
 
 
 
@@ -13,6 +15,7 @@ function App() {
     <div className="app">
       <Header />
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/categories" element={<CategoriesPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

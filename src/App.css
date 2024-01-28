@@ -5,10 +5,31 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+
+  scroll-behavior: smooth;
+
+  --ui-color: #339933;
+  --accent-color: #ff32a1;
+  --ui-linear: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+
+  --black: #000;
+  --white: #fff;
+  --f1-white: #f1fff1;
+  --8b-grey: #8b8b8b;
+  --a7-grey: #a7a7a7;
+  --ac-grey: #acacac;
+  --c0-grey: #c0c0c0;
+  --6c-grey: #6c6c6c;
+  --92-grey: #929292;
+  --red: red;
+  --blue: rgb(0, 187, 255);
+  --a1-blue: #a1e2eb;
+
+  --transition: 0.3s ease-in;
 }
 
 .app {
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   background-color: white;
@@ -17,9 +38,16 @@
 .container {
   max-width: 1440px;
   width: 100%;
-  margin: 0 30px;
+  padding: 0 40px;
   margin: 0 auto;
-
+}
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
 }
 img {
   max-width: 100%;
@@ -27,8 +55,11 @@ img {
 }
 h2 {
   font-size: 40px;
-  font-weight: 700;
-}
-p {
-  color: black;
+     color:  #FFF;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+   
 }

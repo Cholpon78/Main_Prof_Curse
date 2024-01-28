@@ -1,0 +1,44 @@
+.container {
+  border-radius: 12px;
+  background: linear-gradient(261.47deg, #0b710b 32.63%, #339933 98.96%);
+  padding: 32px;
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.discount_wrapper {
+  display: flex;
+  gap: 32px;
+}
+.discont_banner {
+  width: 100%;
+  max-width: 100%; /* Добавлено максимальное значение ширины */
+  height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+  object-fit: cover; 
+}
+
+.phone_form {
+  width: 100%;
+  max-width: 100%; /* Добавлено максимальное значение ширины */
+}
+
+
+input:hover,
+input:focus {
+  border-color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .discount_wrapper {
+    gap: 16px; /* Уменьшил отступ между рисунком и формой */
+    flex-direction: column-reverse;
+  }
+
+  .discont_banner {
+    max-height: 300px; /* Ограничил максимальную высоту для мобильных устройств */
+  }
+}

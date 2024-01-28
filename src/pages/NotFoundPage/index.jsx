@@ -15,7 +15,14 @@ export default function NotFoundPage() {
         <img src={NotFound} alt="Not found img " />
         <img src={NotFoundTxT} alt="Not found text " />
 
-        <ButtonComponent text="Go Home"  onClick={handleClick} />
+        <ButtonComponent
+          text="Go Home"
+          onClick={handleClick}
+          background={"var(--green, #393)"}
+          padding="16px 56px"
+          borderColor="var(--green, #393)"
+          color={"white"}
+        />
       </section>
     </div>
   );

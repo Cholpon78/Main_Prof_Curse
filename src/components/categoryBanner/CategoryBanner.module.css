@@ -1,7 +1,8 @@
 .wrapper{
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+ 
+
 }
 
 
@@ -16,12 +17,13 @@
 
     }
 .category_container{
-    display: flex;
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 32px;
     }
 .category_img{
-    width: 316px;
-    height: 350px;
+    width: 98%;
+    height: 98%;
     border-radius: 12px;
     background:  lightgray 50% / cover no-repeat;
     object-fit: cover;
@@ -32,7 +34,7 @@
     }
     .categories_line{
         height: 1px;
-        width: 832px;
+        width: 80%;
         border: 1px solid rgb(229, 229, 229);
         margin: 0;
     }
@@ -54,9 +56,9 @@
 }
 .title_btn{
     display: flex;
-    height: 70px;
     align-items: center;
-    margin: 40px 0;
+margin-bottom: 40px;
    justify-content: space-between;
-   gap:32px;
 }
+
+

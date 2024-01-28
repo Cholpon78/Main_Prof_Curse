@@ -5,7 +5,7 @@ import CategoryBanner from "../../components/categoryBanner";
 export default function CategoriesPage() {
   return (
     <div>
-      <CategoryBanner/>
+      <CategoryBanner sliceLimit={5} />
     </div>
   );
 }

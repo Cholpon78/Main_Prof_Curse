@@ -6,31 +6,35 @@ import ButtonComponent from "../../UI/ButtonUi/ButtonComponent";
 import { rootUrl } from "../../helpers";
 
 
-export default function CategoryBanner() {
-  const categories = useSelector((state) => state.categories);
+export default function CategoryBanner({ sliceLimit }) {
+  const categories = useSelector((state) => state.category.categories);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchCategories());
   }, [dispatch]);
 
-
-
   return (
-    <div className= {`container ${s.wrapper}`}>
+    <div className={`container ${s.wrapper}`}>
       <div className={s.title_btn}>
         <h2 className={s.title}>Categories</h2>
+        <div className={s.categories_line}></div>
         <div className={s.category_line_container}>
-          <div className={s.categories_line}></div>
-          <ButtonComponent text="All categories" />
+          
+          <ButtonComponent
+            text="All categories"
+            fontSize={"16px"}
+        padding={"12px 24px"}
+            color={"#8B8B8B"}
+            
+          />
         </div>
       </div>
       <div className={s.category_container}>
-        {categories.slice(0, 4).map((category) => (
+        {categories.slice(0, sliceLimit).map((category) => (
           <div className={s.category_wrapper} key={`${category.id}`}>
             <img
               className={s.category_img}
-             
               src={`${rootUrl}${category.image}`}
               alt={`${category.title}`}
             />

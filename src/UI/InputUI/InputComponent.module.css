@@ -1,0 +1,8 @@
+.ui_input{
+border-radius: var(--radius-small, 6px);
+display: flex;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}

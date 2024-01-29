@@ -1,24 +1,21 @@
-import { rootUrl, categoryUrl, } from "../helpers";
+import { createSlice } from "@reduxjs/toolkit";
+import { fetchCategories } from "../asyncAction/categoriesFetch";
 
-const defaultstate = {
-  rootUrl,
-  categoryUrl,
+const initialState = {
+  rootUrl: "", 
+  categoryUrl: "", 
   categories: [],
 };
 
-export const CATEGORIES = "CATEGORIES";
+const categorySlice = createSlice({
+  name: "category",
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(fetchCategories.fulfilled, (state, action) => {
+      state.categories = action.payload;
+    });
+  },
+});
 
-export const categoryReducer = (state = defaultstate, action) => {
-  switch (action.type) {
-    case CATEGORIES:
-      return {
-        ...state,
-        categories: action.payload,
-      };
-    default:
-      return state;
-  }
-};
-
-
-
+export const categoryReducer = categorySlice.reducer;

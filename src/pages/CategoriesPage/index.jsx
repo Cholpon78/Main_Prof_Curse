@@ -1,11 +1,17 @@
 import React from "react";
-import CategoryBanner from "../../components/categoryBanner";
+import Breadcrumbs from "../../components/BreadCrumbs";
+import s from './CategoriesPage.module.css'
+import CategoryContainer from "../../components/CategoryContainer";
+import { useSelector } from "react-redux";
 
 
 export default function CategoriesPage() {
+  const categories = useSelector((state) => state.category.categories);
   return (
     <div>
-      <CategoryBanner sliceLimit={5} />
+      <Breadcrumbs />
+      <h2 className={s.title}>Categories</h2>
+      <CategoryContainer categories={categories} />
     </div>
   );
 }

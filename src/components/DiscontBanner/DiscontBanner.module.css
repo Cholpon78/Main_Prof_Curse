@@ -12,33 +12,33 @@
   display: flex;
   gap: 32px;
 }
+
 .discont_banner {
-  width: 100%;
-  max-width: 100%; /* Добавлено максимальное значение ширины */
-  height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
-  object-fit: cover; 
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: right;
+  transition: max-width 0.3s ease; 
 }
 
 .phone_form {
   width: 100%;
-  max-width: 100%; /* Добавлено максимальное значение ширины */
+  max-width: 100%;
 }
-
 
 input:hover,
 input:focus {
   border-color: #fff;
 }
 
-
 @media screen and (max-width: 768px) {
-
   .discount_wrapper {
-    gap: 16px; /* Уменьшил отступ между рисунком и формой */
+    gap: 16px;
     flex-direction: column-reverse;
   }
 
   .discont_banner {
-    max-height: 300px; /* Ограничил максимальную высоту для мобильных устройств */
+    max-width: 100%; 
+    object-position: left; 
   }
 }

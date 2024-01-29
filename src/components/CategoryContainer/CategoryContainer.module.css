@@ -1,0 +1,27 @@
+.category_container {
+  display: flex;
+   gap: 32px;
+}
+.category_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 418px;
+}
+.category_img {
+  width: 98%;
+  height: 98%;
+  border-radius: 12px;
+  background: lightgray 50% / cover no-repeat;
+  object-fit: cover;
+}
+.category_title {
+  color: #282828;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 26px */
+}
+

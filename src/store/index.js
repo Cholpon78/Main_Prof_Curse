@@ -3,6 +3,7 @@ import { thunk } from "redux-thunk";
 import { categoryReducer } from "./categoryReducer";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import { productReducer } from "./productReducer";
 
 const persistConfig = {
   key: "localstore",
@@ -15,6 +16,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   category: categoryReducer,
+  products: productReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
